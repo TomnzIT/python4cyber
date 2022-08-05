@@ -3,8 +3,13 @@ import subprocess
 import sys
 from datetime import datetime
 
-
+subprocess.call("pip install pyfiglet", shell=True)
 subprocess.call("clear", shell=True)
+
+import pyfiglet
+
+ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
+print(ascii_banner)
 
 remoteServerIP = input("Entrer l\'IP d\'un serveur à scanner : ")
 
